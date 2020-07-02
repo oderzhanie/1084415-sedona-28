@@ -924,7 +924,6 @@ img {
 
   background-color: var(--basic-light-blue);
   border-style: none;
-
 }
 
 .booking-form__submit:hover,
@@ -1431,13 +1430,13 @@ label.features-checkbox {
 .features-checkbox input[type="checkbox"] + .checkbox-indicator {
   position: absolute;
   left: 0;
-  background-image: url('../img/Shape_square_for_checkbox.svg');
+  background-image: url('../img/shape_square_for_checkbox.svg');
   background-size: 23px 23px;
   background-repeat: no-repeat;
 }
 
 .features-checkbox input[type="checkbox"]:disabled + .checkbox-indicator {
-  background-image: url('../img/Shape_square_for_checkbox_disabled.svg');
+  background-image: url('../img/shape_square_for_checkbox_disabled.svg');
   background-size: 23px 23px;
   background-repeat: no-repeat;
   cursor: default;
@@ -1449,8 +1448,8 @@ label.features-checkbox {
 
 .features-checkbox input[type="checkbox"]:checked + .checkbox-indicator {
   background-image:
-                  url('../img/Shape_square_for_checkbox.svg'),
-                  url('../img/Shape_tick_for_checkbox.svg');
+                  url('../img/shape_square_for_checkbox.svg'),
+                  url('../img/shape_tick_for_checkbox.svg');
   background-size: 23px 23px, 22px 17px;
   background-position: top 0 left 0, left 5px bottom 5px;
   background-repeat: no-repeat;
@@ -1458,8 +1457,8 @@ label.features-checkbox {
 
 .features-checkbox input[type="checkbox"]:checked:disabled + .checkbox-indicator {
   background-image:
-                  url('../img/Shape_square_for_checkbox_disabled.svg'),
-                  url('../img/Shape_tick_for_checkbox_disabled.svg');
+                  url('../img/shape_square_for_checkbox_disabled.svg'),
+                  url('../img/shape_tick_for_checkbox_disabled.svg');
   background-size: 23px 23px, 22px 17px;
   background-position: top 0 left 0, left 5px bottom 5px;
   background-repeat: no-repeat;
