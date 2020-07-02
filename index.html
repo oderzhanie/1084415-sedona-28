@@ -3,10 +3,154 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="css/normalize-min.css">
+    <link rel="stylesheet" href="css/style-min.css">
   </head>
+
   <body>
+    <header class="main-header">
+      <a class="main-header__logo">
+        <span class="visually-hidden">На главную</span>
+        <img class="main-header__image" src="img/logo.svg" width="140" height="71" alt="Логотип онлайн-сервиса бронирования отелей в Седоне - Sedona">
+      </a>
+      <nav class="main-nav">
+        <ul class="main-nav__site">
+          <li class="main-nav__site-item"><a class="main-nav__site-link" href="#">Информация</a></li>
+          <li class="main-nav__site-item"><a class="main-nav__site-link" href="#">Фото и видео</a></li>
+          <li class="main-nav__site-item"><a class="main-nav__site-link" href="#">Карта штата</a></li>
+          <li class="main-nav__site-item"><a class="main-nav__site-link" href="hotels.html">Гостиницы</a></li>
+        </ul>
+      </nav>
+    </header>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+    <main>
+      <h1 class="visually-hidden">Онлайн-сервис бронирования отелей в Седоне - Sedona</h1>
+      <div class="intro"></div>
+      <section class="advantages">
+        <h2 class="visually-hidden">Преимущества отдыха в городе Седона</h2>
+        <div class="advantages-intro">
+          <p class="advantages__title"><strong>Седона — небольшой городок в Аризоне, заслуживающий большего!</strong></p>
+          <p class="advantages__subtitle">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+        </div>
+        <ul class="advantages__list">
+          <li class="advantages__item advantages__item_type-1">
+            <div class="advantages__content">
+              <h3 class="advantages__advantage-name">Настоящий городок</h3>
+              <p class="advantages__advantage-text">— №1 —</p>
+              <p class="advantages__advantage-text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+            </div>
+            <img class="advantages__picture" src="img/feature-picture.jpg" width="800" height="256" alt="Фотография улицы в Седоне">
+          </li>
+          <li class="advantages__item advantages__item_type-2">
+            <h3 class="advantages__advantage-name">Жильё</h3>
+            <p class="advantages__advantage-text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+          </li>
+          <li class="advantages__item advantages__item_type-2">
+            <h3 class="advantages__advantage-name">Еда</h3>
+            <p class="advantages__advantage-text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+          </li>
+          <li class="advantages__item advantages__item_type-2">
+            <h3 class="advantages__advantage-name">Сувениры</h3>
+            <p class="advantages__advantage-text">Не только китайского, но и местного производства!</p>
+          </li>
+          <li class="advantages__item advantages__item_type-1">
+            <img class="advantages-list__picture" src="img/layer-5.png" width="800" height="256" alt="Фотография моста дьявола в Седоне">
+            <div class="advantages__content">
+              <h3 class="advantages__advantage-name">Там есть <br>мост дьявола</h3>
+              <p class="advantages__advantage-text">— №2 —</p>
+              <p class="advantages__advantage-text">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+            </div>
+          </li>
+          <li class="advantages__item advantages__item_type-3">
+            <h3 class="advantages__advantage-name">Небольшая площадь</h3>
+            <p class="advantages__advantage-text">— №3 —</p>
+            <p class="advantages__advantage-text">Все достопримечательности находятся очень близко</p>
+          </li>
+          <li class="advantages__item advantages__item_type-3">
+            <h3 class="advantages__advantage-name">Красивая дорога</h3>
+            <p class="advantages__advantage-text">— №4 —</p>
+            <p class="advantages__advantage-text">Ехать в Седону из Лас-Вегаса совсем <br> не скучно!</p>
+          </li>
+          <li class="advantages__item advantages__item_type-3">
+            <h3 class="advantages__advantage-name">Мало туристов</h3>
+            <p class="advantages__advantage-text">— №5 —</p>
+            <p class="advantages__advantage-text">Большинство едет в гранд каньон <br>и толпится там!</p>
+          </li>
+        </ul>
+      </section>
 
+      <section class="booking">
+        <h2 class="visually-hidden">Форма для поиска гостиницы в Седоне</h2>
+        <div class="booking__titles-container">
+          <p class="booking__title"><strong>Заинтересовались?</strong></p>
+          <p class="booking__subtitle">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        </div>
+        <button class="booking-form__title">Поиск гостиницы в Седоне</button>
+        <form class="booking-form" method="GET" action="#">
+          <label for="startdate" class="booking-form__text booking-form__input-title">Дата заезда:</label>
+          <input class="booking-form__text booking-form__input" type="text" id="startdate" placeholder="24 июня 2020" readonly>
+          <button class="booking-form__date-button" type="button" id="startdate-button" aria-label="Выбрать дату заезда"></button>
+
+          <label class="booking-form__text booking-form__input-title">Дата выезда:</label>
+          <input class="booking-form__text booking-form__input" type="text" id="enddate" placeholder="24 июля 2020" readonly>
+          <button class="booking-form__date-button" type="button" id="enddate-button" aria-label="Выбрать дату выезда"></button>
+
+          <label for="adults" class="booking-form__text booking-form__input-title">Взрослые:</label>
+          <div class="booking-form__quantity-container">
+            <button class="booking-form__counter quantity-arrow-minus" aria-label="Убрать одного взрослого"></button>
+            <input class="booking-form__input" type="number" id="adults" value="2" step="1" min="1" max="30" tabindex="-1" readonly>
+            <button class="booking-form__counter quantity-arrow-plus" aria-label="Добавить одного взрослого"></button>
+          </div>
+
+          <label for="children" class="booking-form__text booking-form__input-title">Дети:</label>
+          <div class="booking-form__quantity-container">
+            <button class="booking-form__counter quantity-arrow-minus" aria-label="Убрать одного ребенка"></button>
+            <input class="booking-form__input" type="number" id="children" value="0" step="1" min="0" max="30" tabindex="-1" readonly>
+            <button class="booking-form__counter quantity-arrow-plus" aria-label="Добавить одного ребенка"></button>
+          </div>
+
+          <button type="submit" class="booking-form__submit">Найти</button>
+        </form>
+        <iframe class="booking-map booking-map__interactive" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d456345.2068862833!2d-111.8550700573085!3d34.97414282863233!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1593090392027!5m2!1sru!2sru" width="1200" height="593" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        <img class="booking-map booking-map__image" src="img/map@2x.jpg" width="1199" height="593" alt="Карта Седоны и окрестностей">
+      </section>
+    </main>
+
+    <footer class="main-footer main-footer_index">
+      <div class="main-footer__contacts">
+        <p>#VISITSEDONA</p>
+        <a href="tel:+74956660166">ТЕЛ: +7(495) 666-02-66</a>
+      </div>
+      <div class="main-footer__social">
+        <ul class="social-list">
+          <li class="social-list__item">
+            <span class="visually-hidden">Твиттер</span>
+            <a class="social-list__link" href="#">
+              <div class="social-list__logo social-list__logo-twitter"></div>
+            </a>
+          </li>
+          <li class="social-list__item">
+            <span class="visually-hidden">Фейсбук</span>
+            <a class="social-list__link" href="#">
+              <div class="social-list__logo social-list__logo-fb"></div>
+            </a>
+          </li>
+          <li class="social-list__item">
+            <span class="visually-hidden">Ютьюб</span>
+            <a class="social-list__link" href="#">
+              <div class="social-list__logo social-list__logo-yt"></div>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="main-footer__copyright">
+        <p class="main-footer__copyright-text">Website by</p>
+        <a class="main-footer__copyright-logo" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">
+          <span class="visually-hidden">Образовательный онлайн-сервис HTML Academy</span>
+          <span class="main-footer__copyright-logo"></span>
+        </a>
+      </div>
+    </footer>
+    <script src="js/booking-min.js"></script>
   </body>
 </html>
